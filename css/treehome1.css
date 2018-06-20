@@ -1,12 +1,11 @@
-html,body {
-	margin: 0;
+/*.col-md-* {
 	padding: 0;
-}
-* {
 	margin: 0;
-	padding: 0;
+}*/
+.img-responsive {
+	padding-right: 0;
+	padding-left: 0;
 }
-
 .flex-container_row {
 	display: flex;
 	align-items: center;
@@ -44,11 +43,12 @@ a.topfont{
 a.topfont:hover {
 	background-color: #777777; 
 	color: white;
-	transition: 0.35s ease;
+	width: 0;
+	transition: all 0.35s ease;
 }
 .head1 {
 	background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("../img/background1.jpg") no-repeat center; 
-	background-size: cover; 
+	background-size: 100% 100%; 
 	width: 100%;
 	text-align: center;
 	float: none;
@@ -78,6 +78,8 @@ a.topfont:hover {
 .head3 .row {
 	background-image: url(../img/grey.jpg);
 	background-size: cover;
+	margin-right: 0;
+	margin-left: 0;
 }
 /*.head3 .col-md-4 {
 	margin-top: 150px;
@@ -85,11 +87,12 @@ a.topfont:hover {
 }*/
 .head3 img {
 	animation: rotate 10s linear infinite;
+	vertical-align: middle;
 }
 #head3colmd8{
 	background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url(../img/background2.jpg);
 	background-position: center;
-	background-size: cover;
+	background-size: 100% 100%;
 	padding: 0;
 	padding-top: 8%;
 	padding-left: 8%;
@@ -98,8 +101,9 @@ a.topfont:hover {
 	background-repeat: no-repeat;
 }
 .head3 ul{
-	padding-right: 45%;
-	padding-bottom: 10%;
+	padding-right: 10%;
+	padding-bottom: 5%;
+	padding-left: 0;
 }
 .head3 li:before {
   content: '\f058';
@@ -131,6 +135,9 @@ a.topfont:hover {
 	text-align: left;
 	padding-left: 0;
 	margin: 0;
+}
+.head3 .linkf1 {
+	margin-bottom: 5%;
 }
 #head4col1 {
 	padding-top:100px;
@@ -503,14 +510,6 @@ a.topfont:hover {
     100% {transform:rotate(360deg);}
 }
 @media (max-width: 992px){
-html,body {
-	margin: 0;
-	padding: 0;
-}
-.col-md-* {
-	padding: 0;
-	width: 100%;
-}
 .flex-container_row {
 	flex-wrap: wrap;
 }
@@ -545,6 +544,7 @@ html,body {
 }
 .dropdown-menu {
 	width: 100%;
+	margin: 0;
 }
 .topfont{
 	display: block;
@@ -555,6 +555,9 @@ html,body {
 }
 .f2 {
 	font-size: 15px;
+}
+.head1 .f2 {
+	margin-bottom: 50px;
 }
 .topmob .btn,.topmob .btn:link,.topmob .btn:active, .topmob .btn:focus {
 	background-color: white;
