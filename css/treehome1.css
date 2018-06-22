@@ -1,5 +1,6 @@
 .container-fluid {
 	padding: 0;
+	margin: 0;
 }
 #navi {
 	transition: all 0.5s ease;
@@ -645,7 +646,25 @@ a.topfont{
 .flex-container_row {
 	flex-wrap: wrap;
 }
-.dropdown-menu >li>a{
+.container-fluid .topmob {
+	padding: 0;
+	position: relative;
+}
+button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+.dropdown-menu {
+	padding: 0;
+	margin: 0;
+	min-width: 100%;
+	position: absolute;
+	left: -15px;
+	right: -15px;
 	font-family: Helvetica, sans-serif;
 	font-size: 18px;
 	text-decoration: none;
@@ -653,8 +672,10 @@ a.topfont{
 	line-height: 41px;
 	text-align: center;
 	color: #777777;
-	padding: 10px;
 	background-color: white;
+}
+.pull-right {
+	left: 0;
 }
 .top {
 	display:none;
@@ -670,10 +691,6 @@ a.topfont{
 	margin-top: auto;
 	margin-bottom: auto;
 	padding-right: 0;
-}
-.dropdown-menu, .dropdown-item {
-	width: 100%;
-	margin: 0;
 }
 .topfont{
 	display: block;
@@ -737,6 +754,9 @@ a.topfont{
 .head4 .f4 {
 	font-size: 15px;
 	margin-bottom: 20px;
+}
+#ipadair {
+	display: none;
 }
 .head4 .f5 {
 	padding-top: 5px;
