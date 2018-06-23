@@ -13,44 +13,26 @@
 		<title>TREEHOUSE</title>
 </head>	
 <body>
-	<div class="container-fluid">
-		<div class="top">
-			<div class="row">
-				<div class="col-md-6" style="text-align: left; width: 33.33%;">
-					<a href="#"><img src="img/tree.jpg" class="img-responsive"></a>
-				</div>
-				<div class="col-md-6" id="navi" style="text-align: right; width: 66.6%;">
-					<a class="topfont" href="#">HOME</a>
-					<a class="topfont" href="#th1">ABOUT</a>
-					<a class="topfont" href="#blogs">BLOG</a>
-					<a class="topfont" href="#portfolio">PORTFOLIO</a>
-					<a class="topfont" href="#contactus">CONTACT</a>
-				</div>
-			</div>
+	<nav class="navbar navbar-default">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#treenav">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><img src="img/tree.jpg" style="padding-bottom: 5px;"></a>
 		</div>
-	</div>
-	<div class="container-fluid">
-		<div class="topmob">
-			<div class="row">
-				<div class="col-md-6" id="mob1">
-					<img src="img/tree.jpg" style="padding-top: 2%;">
-				</div>
-				<div class="col-md-6" id="mob2">
-					<div class="dropdown">
-					    <button class="button btn-basic dropdown-toggle" data-toggle="dropdown"><h1 class="f3" style="margin: 0;
-					    padding: 0;"><span class="fa fa-bars" style="padding-right: 0;padding-top: 3px;"></span></h1></button>
-					    <div class="dropdown-menu" id="dm">
-					        <a class="topfont dropdown-item" href="#">HOME</a>
-					        <a class="topfont dropdown-item" href="#">ABOUT</a>
-					        <a class="topfont dropdown-item" href="#">BLOG</a>
-					        <a class="topfont dropdown-item" href="#">PORTFOLIO</a>
-					        <a class="topfont dropdown-item" href="#">CONTACT</a>
-					    </div>
-					</div>
-				</div>
-			</div>
+		<div class="collapse navbar-collapse" id="treenav">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#">HOME</a></li>
+				<li><a href="#th1">ABOUT</a></li>
+				<li><a href="#blogs">BLOG</a></li>
+				<li><a href="#portfolio">PORTFOLIO</a></li>
+				<li><a href="#contactus">CONTACT</a></li>
+			</ul>
 		</div>
-	</div>
+	</nav>
 	<div class="container-fluid">
 		<div class="head1" id="th1">
 			<div class="row wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3s">
@@ -298,11 +280,11 @@
 		// 		document.getElementById
 		// 	}
 		// }
-		// $(document).ready(function(){
-  //   		$("button").click(function(){
-  //       		$(".dropdown-menu").slideToggle();
-  //   		});
-		// });
+		$(document).ready(function(){
+    		$("button").click(function(){
+        		$(".dropdown-menu").slideToggle();
+    		});
+		});
 		$(function(){
   			new WOW().init(); 
 		});
